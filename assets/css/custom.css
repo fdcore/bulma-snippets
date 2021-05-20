@@ -1,0 +1,4 @@
+body, html, .section{
+    min-height: 100%;
+    height: 100%;
+}

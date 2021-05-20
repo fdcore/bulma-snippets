@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bulma Snippets</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/reqwest.js"></script>
+  </head>
+  <body>
+    <section class="section has-background-light" id="app">
+      <div class="container is-fluid">
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-3-desktop ">
+
+            <div class="dropdown is-active">
+              <div class="dropdown-menu is-relative" id="dropdown-menu" role="menu">
+                <div class="dropdown-content" style="width: 220px">
+                  
+                  <a href="#" class="dropdown-item">Menu</a>
+                  <a href="#" class="dropdown-item">Navigation</a>
+                  <a href="#" class="dropdown-item">Message</a>
+					
+				        </div>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="app">
+            
+            <div class="is-flex is-flex-wrap-wrap">
+              
+              <div class="box mr-2 has-background-white-bis" style="width: 100%;" v-for="s in snippets_html">
+                  <div v-html="s"></div>
+                  
+                  <button class="button is-small is-link is-light mt-1" type="button" @click="show_html(s)">html</button>
+              </div>
+
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal" :class="{'is-active': show_html_modal}">
+        <div class="modal-background" @click="show_html_modal=0"></div>
+        <div class="modal-content">
+           <div class="box"><pre v-text="modal_content"></pre></div>
+        </div>
+        <button class="modal-close is-large" @click="show_html_modal=0" aria-label="close"></button>
+      </div>
+  
+  
+    </section>
+
+      <script src="assets/js/app.js"></script>
+  </body>
+</html>
