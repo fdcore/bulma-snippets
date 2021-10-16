@@ -34,10 +34,10 @@
             
             <div class="is-flex is-flex-wrap-wrap">
               
-              <div class="box mr-2 has-background-white-bis" style="width: 100%;" v-for="s in snippets_html">
+              <div class="box mr-2 has-background-white-bis is-relative" style="width: 100%;" v-for="s in snippets_html">
                   <div v-html="s"></div>
                   
-                  <button class="button is-small is-link is-light mt-1" type="button" @click="show_html(s)">html</button>
+                  <button class="button is-small is-link is-light mt-1 atr-5" type="button" @click="show_html(s)">html</button>
               </div>
 
             </div>

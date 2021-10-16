@@ -1,0 +1,40 @@
+<section class="info-tiles">
+    <div class="tile is-ancestor is-vertical">
+  
+        <div class="tile is-parent box has-background-white-bis mb-2 mt-0">
+            <article class="tile is-child is-2">Bitcoin</article>
+            <article class="tile is-child"><code>$61,688.19</code></article>
+            <article class="tile is-child">$1,162,504,687,322</article>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor is-vertical">
+      <div class="tile is-parent box has-background-white-bis mb-2 mt-0">
+        <article class="tile is-child is-2">Ethereum</article>
+        <article class="tile is-child"><code>$3,878.52</code></article>
+        <article class="tile is-child">$457,441,638,189</article>
+    </div>
+  </div>
+
+
+</section>
+
+<style>
+
+
+  .tile .box{
+    border: 2px solid transparent;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+  }
+
+  .tile:hover > .box{
+    border: 2px solid #276cda91;
+    cursor: pointer;
+  }
+
+  .tile.is-active .box{
+    border: 2px solid #276cda;
+    cursor: pointer;
+  }
+
+</style>

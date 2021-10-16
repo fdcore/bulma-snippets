@@ -1,0 +1,66 @@
+<div class="tile is-ancestor has-text-centered">
+    <div class="tile is-parent is-active">
+        <article class="tile is-child box is-relative">
+            <button class="button is-danger is-light is-small atr-5 show-hover">
+                <span class="icon">
+                  <i class="fa fa-times"></i>
+                </span>
+              </button>
+            <p class="title">ETH</p>
+            <p class="subtitle">$1234.34</p>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">BTC</p>
+            <p class="subtitle">Bitcoin</p>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">RVN</p>
+            <p class="subtitle"></p>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">XZC</p>
+            <p class="subtitle"></p>
+        </article>
+    </div>
+
+    <div class="tile is-parent">
+        <article class="tile is-child box is-shadowless has-background-white-ter">
+            <p class="title is-size-1 has-text-grey-lighter">+</p>
+        </article>
+    </div>
+
+</div>
+
+<style>
+
+    .tile .box{
+        border: 2px solid transparent;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+      }
+    
+      .tile:hover > .box{
+        border: 2px solid #276cda91;
+        cursor: pointer;
+      }
+    
+      .tile.is-active .box{
+        border: 2px solid #276cda;
+        cursor: pointer;
+      }
+      
+    .tile .button.show-hover {
+        display: none;
+      }
+      
+      .tile:hover > .button.show-hover {
+        display: block;
+      }
+
+
+</style>

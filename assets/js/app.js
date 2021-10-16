@@ -3,7 +3,10 @@ var app = new Vue({
     data: {
         snippets: [
             'menu.html',
-            'message.html'
+            'message.html',
+            'menu-with-search.html',
+            'block-table.html',
+            'block-tile.html',
         ],
         snippets_html: [],
         show_html_modal: false,
